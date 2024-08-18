@@ -53,15 +53,15 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    );
 - **flights**
    ```sql
-   CREATE TABLE flights (
-  flight_id INT PRIMARY KEY,
-  from_location VARCHAR(45),
-  to_location VARCHAR(45),
-  departure_date DATE,
-  arrival_date DATE,
-  departure_time VARCHAR(45),
-  arrival_time VARCHAR(45),
-  total_seats VARCHAR(45)
+  CREATE TABLE passenger (
+  passenger_id INT AUTO_INCREMENT PRIMARY KEY,
+  flight_id INT,
+  passenger_name VARCHAR(45),
+  age VARCHAR(45),
+  email VARCHAR(45),
+  contact VARCHAR(45),
+  address VARCHAR(100),
+  FOREIGN KEY (flight_id) REFERENCES flights(flight_id)
    );
 - **airport**
    ```sql
