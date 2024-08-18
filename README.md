@@ -19,21 +19,24 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    cd Airline-Management-System
    
 2. **Installing the dependencies:**
-   ```npm install
+   ```bash
+   npm install
    
 3. **Setup MySQL Database:**
    
 4. **Run the Server:**
-   ```node server.js
+   ```bash
+   node server.js
+   
 5. **Access the Application:**
      Open your browser and navigate to http://localhost:3000 to access the AviaSphere Airline Management System.
    
 ### Features
 
-User Registration: Secure user registration and authentication.
-Flight Management: Manage flight details and availability.
-Passenger Handling: Record and manage passenger information.
-Add-ons: Customize travel experience with meal preferences and seating options.
+- User Registration: Secure user registration and authentication.
+- Flight Management: Manage flight details and availability.
+- Passenger Handling: Record and manage passenger information.
+- Add-ons: Customize travel experience with meal preferences and seating options.
 
 
 
