@@ -23,9 +23,10 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    npm install
    
 3. **Setup MySQL Database:**
+   
    Create the following tables in your MySQL database:
 
--  **register**
+--  **register**
    ```sql
    CREATE TABLE register (
      email VARCHAR(50) PRIMARY KEY,
@@ -42,7 +43,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   email VARCHAR(45),
   contact VARCHAR(45),
   address VARCHAR(100)
-);
+   );
 - **flights**
    ```sql
    CREATE TABLE flights (
@@ -54,14 +55,14 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   departure_time VARCHAR(45),
   arrival_time VARCHAR(45),
   total_seats VARCHAR(45)
-);
+   );
 - **airport**
    ```sql
    CREATE TABLE admin (
   admin_id INT PRIMARY KEY,
   username VARCHAR(45),
   password VARCHAR(45)
-);
+  );
 - **addons**
    ```sql
    CREATE TABLE addons (
@@ -69,7 +70,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   meal_preference VARCHAR(45),
   xl_seatbelt VARCHAR(45),
   child_seatbelt VARCHAR(45)
-);
+ );
    
 5. **Run the Server:**
    ```bash
