@@ -23,12 +23,59 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    npm install
    
 3. **Setup MySQL Database:**
+   Create the following tables in your MySQL database:
+
+-  **register**
+   ```sql
+   CREATE TABLE register (
+     email VARCHAR(50) PRIMARY KEY,
+     name VARCHAR(20),
+     password VARCHAR(15)
+   );
+- **passenger**
+   ```sql
+  CREATE TABLE passenger (
+  passenger_id INT AUTO_INCREMENT PRIMARY KEY,
+  flight_id INT,
+  passenger_name VARCHAR(45),
+  age VARCHAR(45),
+  email VARCHAR(45),
+  contact VARCHAR(45),
+  address VARCHAR(100)
+);
+- **flights**
+   ```sql
+   CREATE TABLE flights (
+  flight_id INT PRIMARY KEY,
+  from_location VARCHAR(45),
+  to_location VARCHAR(45),
+  departure_date DATE,
+  arrival_date DATE,
+  departure_time VARCHAR(45),
+  arrival_time VARCHAR(45),
+  total_seats VARCHAR(45)
+);
+- **airport**
+   ```sql
+   CREATE TABLE admin (
+  admin_id INT PRIMARY KEY,
+  username VARCHAR(45),
+  password VARCHAR(45)
+);
+- **addons**
+   ```sql
+   CREATE TABLE addons (
+  seat_preference VARCHAR(45),
+  meal_preference VARCHAR(45),
+  xl_seatbelt VARCHAR(45),
+  child_seatbelt VARCHAR(45)
+);
    
-4. **Run the Server:**
+5. **Run the Server:**
    ```bash
    node server.js
    
-5. **Access the Application:**
+6. **Access the Application:**
      Open your browser and navigate to http://localhost:3000 to access the AviaSphere Airline Management System.
    
 ### Features
