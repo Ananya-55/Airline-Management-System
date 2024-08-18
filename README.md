@@ -36,22 +36,25 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
 -  **register**
    ```sql
    CREATE TABLE register (
-     email VARCHAR(50) PRIMARY KEY,
-     name VARCHAR(20),
-     password VARCHAR(15)
+   email VARCHAR(50) PRIMARY KEY,
+   name VARCHAR(20),
+   password VARCHAR(15)
    );
-- **passenger**
-   ```sql
-  CREATE TABLE passenger (
-  passenger_id INT AUTO_INCREMENT PRIMARY KEY,
-  flight_id INT,
-  passenger_name VARCHAR(45),
-  age VARCHAR(45),
-  email VARCHAR(45),
-  contact VARCHAR(45),
-  address VARCHAR(100)
-   );
+   
 - **flights**
+  ```sql
+  CREATE TABLE flights (
+  flight_id INT PRIMARY KEY,
+  from_location VARCHAR(45),
+  to_location VARCHAR(45),
+  departure_date DATE,
+  arrival_date DATE,
+  departure_time VARCHAR(45),
+  arrival_time VARCHAR(45),
+  total_seats VARCHAR(45)
+ );
+ 
+- **passenger**
    ```sql
   CREATE TABLE passenger (
   passenger_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -62,7 +65,8 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   contact VARCHAR(45),
   address VARCHAR(100),
   FOREIGN KEY (flight_id) REFERENCES flights(flight_id)
-   );
+  );
+
 - **airport**
    ```sql
    CREATE TABLE airport (
@@ -71,6 +75,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   airport_name VARCHAR(45),
   city VARCHAR(45)
   );
+   
 - **admin**
    ```sql
    CREATE TABLE admin (
@@ -78,6 +83,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   username VARCHAR(45),
   password VARCHAR(45)
   );
+   
 - **addons**
    ```sql
    CREATE TABLE addons (
