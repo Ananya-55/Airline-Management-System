@@ -2,7 +2,7 @@
 
 ## Introduction
 
-AviaSphere is a comprehensive Airline Management System designed to streamline and optimize airline operations. This system features advanced functionalities for flight management, passenger handling, booking services, and secure user authentication. It provides a user-friendly interface for administrators, staff, and passengers to manage tasks such as booking, check-in, and flight tracking efficiently.
+AviaSphere is a comprehensive Airline Management System designed to streamline and optimize airline operations. This system features functionalities for flight management, passenger handling and booking services. It provides a user-friendly interface for administrators and passengers to manage tasks such as booking and flight tracking efficiently.
 
 ## Setup Instructions
 
@@ -81,7 +81,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    
 ### Features
 
-- User Registration: Secure user registration and authentication.
+- User Registration: Secure user registration.
 - Flight Management: Manage flight details and availability.
 - Passenger Handling: Record and manage passenger information.
 - Add-ons: Customize travel experience with meal preferences and seating options.
