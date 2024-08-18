@@ -70,7 +70,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
   meal_preference VARCHAR(45),
   xl_seatbelt VARCHAR(45),
   child_seatbelt VARCHAR(45)
- );
+  );
    
 5. **Run the Server:**
    ```bash
