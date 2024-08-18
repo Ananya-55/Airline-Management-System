@@ -65,6 +65,14 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    );
 - **airport**
    ```sql
+   CREATE TABLE airport (
+  airport_id INT PRIMARY KEY,
+  country VARCHAR(45),
+  airport_name VARCHAR(45),
+  city VARCHAR(45)
+  );
+- **admin**
+   ```sql
    CREATE TABLE admin (
   admin_id INT PRIMARY KEY,
   username VARCHAR(45),
