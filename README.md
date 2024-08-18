@@ -26,7 +26,7 @@ AviaSphere is a comprehensive Airline Management System designed to streamline a
    
    Create the following tables in your MySQL database:
 
---  **register**
+-  **register**
    ```sql
    CREATE TABLE register (
      email VARCHAR(50) PRIMARY KEY,
